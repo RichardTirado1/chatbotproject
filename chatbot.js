@@ -17,4 +17,7 @@ function talkButton() {
   console.log("userInput is " + userInput);
   var answer = responses[userInput];
   document.getElementById("chat-area").textContent = answer;
+
+$('#chat-area').prepend("Bobby: " + answer + "</br>");
+$('#chat-area').prepend("You: " + question + "." + "</br>");
 }
