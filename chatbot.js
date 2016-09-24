@@ -18,6 +18,6 @@ function talkButton() {
   var answer = responses[userInput];
   document.getElementById("chat-area").textContent = answer;
 
-$('#chat-area').prepend("Bobby: " + "." + "</br>");
+$('#chat-area').prepend("Bobby: " + ".");
 $('#chat-area').prepend("You: " + userInput + "." + "</br>");
 }
