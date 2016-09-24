@@ -2,7 +2,7 @@ var responses = {
 	"what is your name": "My name is Bobby",
 	"how old are you": "My birth is unknown",
 	"hello": "Hi",
-	"goodmorning": "its a bad morning",
+	"good morning": "its a bad morning",
 	"what is your last name": "I dont have one",
 	"goodbye": "bye",
 	"shut up": "Wait til I get ahold of my programer!",
@@ -18,6 +18,6 @@ function talkButton() {
   var answer = responses[userInput];
   document.getElementById("chat-area").textContent = answer;
 
-$('#chat-area').prepend("Bobby: " + answer + "</br>");
-$('#chat-area').prepend("You: " + question + "." + "</br>");
+$('#chat-area').prepend("Bobby: " + "." + "</br>");
+$('#chat-area').prepend("You: " + userInput + "." + "</br>");
 }
