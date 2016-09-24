@@ -5,6 +5,7 @@ var responses = {
 	"goodmorning": "its a bad morning",
 	"what is your last name": "I dont have one",
 	"goodbye": "bye",
+	"shut up": "Wait til I get ahold of my programer!",
 }
 
 

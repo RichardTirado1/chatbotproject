@@ -1,6 +1,3 @@
-.header {
-    background-color: #3DC2FF;
-}
 
 h4 {
     padding: 0px;
@@ -58,6 +55,7 @@ h4 {
     border: 1px solid #C0C2C5;
     padding: 10px;
     font-size: 18px;
+    background-image: url("");
 }
 
 #question-area {
@@ -73,7 +71,7 @@ h4 {
 }
 
 #input {
-  background-color: #3DC2FF;
+  background-color: #ffffff;
   border: 0px solid #C0C2C5;
   font-family: sans-serif;
   color: #000;
