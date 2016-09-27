@@ -6,7 +6,7 @@ var responses = {
 	"What is your last name?": "I dont have one",
 	"Are you human?": "trust me im not, if I was I wouldn't be here",
   "Who are you?": "I am Bobby",
-  "Do you have feelings?": "maybe",
+  "Do you have feelings?": "Maybe",
   "Tell me three things about yourself?": "I am Bobby, I am Bobby, I am Bobby",
   "What is one detail you recall from your last chat?": "You asked me a question.",
 }
