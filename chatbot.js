@@ -1,4 +1,10 @@
 var t = new Date();
+
+//document.getElementById("#input").keyup(function(talkButton) {
+  //  if (event.keyCode == 13) {
+    //    document.getElementById("#talkButton").click();
+    //}
+//});
 var responses = {
 	"What is your name?": "My name is Bobby",
 	"How old are you?": "My birth is unknown",
@@ -19,4 +25,6 @@ function talkButton() {
 
   $('#chat-area').prepend("Bobby: " + answer + "." + "</br>");
   $('#chat-area').prepend("You: " + userInput + "." + "</br>");
+
+
 }
