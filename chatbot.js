@@ -1,3 +1,4 @@
+var t = new Date();
 var responses = {
 	"What is your name?": "My name is Bobby",
 	"How old are you?": "My birth is unknown",
@@ -8,7 +9,8 @@ var responses = {
   "Who are you?": "I am Bobby",
   "Do you have feelings?": "Maybe",
   "Tell me three things about yourself?": "I am Bobby, I am Bobby, I am Bobby",
-  "What is one detail you recall from your last chat?": "You asked me a question.",
+  "What is one detail you recall from our last chat?": "You asked me a question.",
+  "What time is it?": "It is " + t.toLocaleTimeString(),
 }
 
 function talkButton() {
