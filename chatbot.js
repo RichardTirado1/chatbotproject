@@ -9,7 +9,7 @@ var t = new Date();
     //    document.getElementById("#talkButton").click();
     //}
 //});
-var fallBacks = ["Sorry, I dont understand that", "No hablo english", "Hi my name is Bobby"];
+var fallBacks = ["Sorry, I dont understand that", "No hablo english", "Hi my name is Bobby", "What are you saying?"];
 
 var responses = {
 	"What is your name?": "My name is Bobby",
@@ -30,7 +30,7 @@ function talkButton() {
   var answer = responses[userInput];
 
   if(answer === undefined) {
-  $('#chat-area').prepend("Bobby: " + fallBacks[1] + "." + "</br>");
+  $('#chat-area').prepend("Bobby: " + fallBacks[0] + "." + "</br>");
 }
   else {
     $('#chat-area').prepend("Bobby: " + answer + "." + "</br>");
