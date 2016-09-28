@@ -1,6 +1,6 @@
 function randomNumberGenerator()
 {
-  Math.floor(Math.random());
+  Math.floor((Math.random() * myArray.length));
 }
 var t = new Date();
 
@@ -10,10 +10,11 @@ var t = new Date();
     //}
 //});
 var fallBacks = ["Sorry, I dont understand that", "No hablo english", "Hi my name is Bobby"];
+
 var responses = {
 	"What is your name?": "My name is Bobby",
 	"How old are you?": "My birth is unknown",
-	"Where are you from?": "I am from......",
+	"Where are you from?": "I am from........",
 	"Can you see me?": "yes you are charming",
 	"What is your last name?": "I dont have one",
 	"Are you human?": "trust me im not, if I was I wouldn't be here",
@@ -28,11 +29,11 @@ function talkButton() {
   var userInput = $("#input").val();
   var answer = responses[userInput];
 
-  $('#chat-area').prepend("Bobby: " + answer + "." + "</br>");
-  $('#chat-area').prepend("You: " + userInput + "." + "</br>");
-if(userInput === undefined || userInput === null)
-{
+  if(answer === undefined) {
   $('#chat-area').prepend("Bobby: " + fallBacks[1] + "." + "</br>");
 }
-
+  else {
+    $('#chat-area').prepend("Bobby: " + answer + "." + "</br>");
+  }
+  $('#chat-area').prepend("You: " + userInput + "." + "</br>");
 }
