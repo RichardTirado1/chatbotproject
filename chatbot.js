@@ -4,11 +4,7 @@ function randomNumberGenerator()
 }
 var t = new Date();
 
-//document.getElementById("#input").keyup(function(talkButton) {
-  //  if (event.keyCode == 13) {
-    //    document.getElementById("#talkButton").click();
-    //}
-//});
+
 var fallBacks = ["Sorry, I dont understand that", "No hablo english", "Hi my name is Bobby", "What are you saying?"];
 
 var responses = {
@@ -31,9 +27,15 @@ function talkButton() {
 
   if(answer === undefined) {
   $('#chat-area').prepend("Bobby: " + fallBacks[0] + "." + "</br>");
-}
+   }
   else {
     $('#chat-area').prepend("Bobby: " + answer + "." + "</br>");
   }
   $('#chat-area').prepend("You: " + userInput + "." + "</br>");
+
+  $("#question-area").keyup(function(event){
+     if(event.keyCode == 13){
+         $("#talkButton").click();
+     }
+   });
 }
