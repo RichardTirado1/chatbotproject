@@ -5,7 +5,7 @@ function randomNumberGenerator()
 var t = new Date();
 
 
-var fallBacks = ["Sorry, I dont understand that", "No hablo english", "Hi my name is Bobby", "What are you saying?"];
+var fallBacks = ["Sorry, I dont understand that", "No hablo english", "Hi my name is Bobby", "What are you saying?", "WhaAAAAAAAAAAAAATTTTTTTT????"];
 
 var responses = {
 	"What is your name?": "My name is Bobby",
@@ -26,14 +26,24 @@ function talkButton() {
   var answer = responses[userInput];
 
   if(answer === undefined) {
-  $('#chat-area').prepend("Bobby: " + fallBacks[0] + "." + "</br>");
+  $('#chat-area').prepend("Bobby: " + fallBacks[4] + "." + "</br>");
    }
   else {
     $('#chat-area').prepend("Bobby: " + answer + "." + "</br>");
   }
   $('#chat-area').prepend("You: " + userInput + "." + "</br>");
 }
+document.getElementById("input").value.toLowerCase() {
 
+var ourContacts = responses.length;
+
+    for (var i = 0; i < ourContacts; i++) {
+        if (input[i].userInput === userInput) {
+
+            chat-area(responses[i]);
+      }
+    }
+  }
 $(document).keyup(function(event){
    if(event.keyCode == 13){
        talkButton();
