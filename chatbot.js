@@ -32,10 +32,10 @@ function talkButton() {
     $('#chat-area').prepend("Bobby: " + answer + "." + "</br>");
   }
   $('#chat-area').prepend("You: " + userInput + "." + "</br>");
-
-  $("#question-area").keyup(function(event){
-     if(event.keyCode == 13){
-         $("#talkButton").click();
-     }
-   });
 }
+
+$(document).keyup(function(event){
+   if(event.keyCode == 13){
+       talkButton();
+   }
+ });
