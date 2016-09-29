@@ -33,15 +33,16 @@ function talkButton() {
   }
   $('#chat-area').prepend("You: " + userInput + "." + "</br>");
 }
+
 document.getElementById("input").value.toLowerCase() {
 
-var ourContacts = responses.length;
+var userInput = responses.length;
 
-    for (var i = 0; i < ourContacts; i++) {
+    for (var i = 0; i < userInput; i++) {
         if (input[i].userInput === userInput) {
 
             chat-area(responses[i]);
-      }
+        }
     }
   }
 $(document).keyup(function(event){
