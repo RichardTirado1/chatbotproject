@@ -20,7 +20,7 @@ function talkButton() {
   var randomNumber =  Math.floor((Math.random() * fallBacks.length));
 
   var userInput = $("#input").val();
-  var userInputLowerCase = userInput.toLowerCase();
+  var userInput = userInput.toLowerCase();
   var answer = responses[userInput];
 
   if(answer === undefined) {
