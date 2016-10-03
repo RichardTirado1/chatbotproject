@@ -23,6 +23,7 @@ function talkButton() {
   var userInput = userInput.toLowerCase();
   var answer = responses[userInput];
   var randomanswerNumber = Math.floor((Math.random() * answer.length));
+  
 
   if(answer === undefined) {
   $('#chat-area').prepend("Bobby: " + fallBacks[randomNumber] + "." + "</br>");
