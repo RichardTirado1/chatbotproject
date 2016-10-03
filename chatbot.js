@@ -30,6 +30,7 @@ function talkButton() {
   else {
   $('#chat-area').prepend("Bobby: " + answer[randomanswerNumber] + "." + "</br>");
   }
+  
   $('#chat-area').prepend("You: " + userInput + "</br>");
   }
 
